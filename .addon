@@ -1,14 +1,14 @@
 {
   "Title": "Tetros",
   "Type": "game",
-  "Org": "local",
+  "Org": "carsonk",
   "Ident": "tetros",
-  "Tags": null,
+  "Tags": "arcade",
   "Schema": 1,
   "HasAssets": true,
   "AssetsPath": "",
-  "Resources": null,
-  "MenuResources": null,
+  "Resources": "/*.scss",
+  "MenuResources": "/*.scss",
   "HasCode": true,
   "CodePath": "/code/",
   "PackageReferences": [],
@@ -24,6 +24,57 @@
     "RankType": "None",
     "PerMapRanking": false,
     "LeaderboardType": "None",
-    "ProjectTemplate": null
+    "ProjectTemplate": null,
+    "CsProjName": "",
+    "ControlModes": {
+      "Keyboard": true,
+      "Gamepad": true
+    },
+    "InputSettings": {
+      "Actions": [
+        {
+          "Name": "TetrosMoveLeft",
+          "KeyboardCode": "LEFTARROW",
+          "GamepadCode": "DpadEast",
+          "GroupName": "Controls"
+        },
+        {
+          "Name": "TetrosMoveRight",
+          "KeyboardCode": "RIGHTARROW",
+          "GamepadCode": "DpadWest",
+          "GroupName": "Controls"
+        },
+        {
+          "Name": "TetrosSoftDrop",
+          "KeyboardCode": "DOWNARROW",
+          "GamepadCode": "DpadSouth",
+          "GroupName": "Controls"
+        },
+        {
+          "Name": "TetrosHardDrop",
+          "KeyboardCode": "SPACE",
+          "GamepadCode": "DpadNorth",
+          "GroupName": "Controls"
+        },
+        {
+          "Name": "TetrosRotateLeft",
+          "KeyboardCode": "Z",
+          "GamepadCode": "X",
+          "GroupName": "Controls"
+        },
+        {
+          "Name": "TetrosRotateRight",
+          "KeyboardCode": "X",
+          "GamepadCode": "Y",
+          "GroupName": "Controls"
+        },
+        {
+          "Name": "TetrosHold",
+          "KeyboardCode": "SHIFT",
+          "GamepadCode": "SwitchLeftBumper",
+          "GroupName": "Controls"
+        }
+      ]
+    }
   }
 }

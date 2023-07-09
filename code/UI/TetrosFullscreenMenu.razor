@@ -1,0 +1,32 @@
+@using System;
+@using System.Collections.Generic;
+@using System.Linq;
+@using Sandbox;
+@using Sandbox.UI;
+@using Sandbox.UI.Construct;
+@inherits TetrosMenu
+@namespace Tetros
+
+<root class="fullscreen">
+
+</root>
+
+@code
+{
+
+    public TetrosFullscreenMenu()
+    {
+        DefaultUrl = "/";
+
+        AddDestination("/", typeof(TetrosGamePage));
+        AddDestination("/gameover", typeof(GameOverPage));
+
+        OnExit += (score) => {
+            Navigate("/gameover");
+            if(Descendants.FirstOrDefault(x => x is GameOverPage) is GameOverPage gameOverPage)
+            {
+                gameOverPage.SetClass("hide", false);
+            }
+        };
+    }
+}
