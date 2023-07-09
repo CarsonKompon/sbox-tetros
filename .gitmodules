@@ -1,0 +1,3 @@
+[submodule "code/Tetros"]
+	path = code/Tetros
+	url = https://github.com/CarsonKompon/tetros-core
