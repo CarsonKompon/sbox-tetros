@@ -25,6 +25,7 @@
             Navigate("/gameover");
             if(Descendants.FirstOrDefault(x => x is GameOverPage) is GameOverPage gameOverPage)
             {
+                gameOverPage.UpdateScores();
                 gameOverPage.SetClass("hide", false);
             }
         };
